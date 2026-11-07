@@ -1,7 +1,6 @@
-#: Viết chương trình nhập vào một “kí tự”, Kiểm tra xem c có phải là kí tự chữ cái không (hoa hoặc thường). Nếu đúng thì in ra “{c} là kí tu alphabet”, nếu sai in ra “{c} không phải là kí tự alphabet
-
-c = input('Nhập vào kí tự: ') 
-if ('a' <= c <= 'z') or ('A' <= c <= 'Z'):
-    print('{0} là kí tự alphabet'.format(c))
+# 4.Kiểm tra tuổi đủ điều kiện bầu cử: Viết chương trình nhập năm sinh của một người, kiểm tra xem người đó có đủ 18 tuổi để đi bầu cử hay không
+n = int(input('Nhập số tuổi hiện tại: '))
+if n < 18:
+    print('Không đủ điều kiện bầu cử')
 else:
-    print('{0} không là kí tự alphabet'.format(c))
+    print('Đủ điều kiện bầu cử')

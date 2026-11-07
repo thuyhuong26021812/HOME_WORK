@@ -1,9 +1,12 @@
-import math
-a, b , c = map(int, input().split())
-p = (a + b + c)/2
-s = math.sqrt(p*(p-a)*(p-b)*(p-c))
-if min(a, b, c)>0 and a + b > c and a + c > b and b + c > a:
-    print('Dien tich:', f'{s:.1f}')
+# 6. Kiểm tra ký tự nhập vào là chữ hay số: Viết chương trình nhập một ký tự, kiểm tra xem ký tự đó là chữ cái hay số. 
+ki_tu = input()
+if 'a' <= ki_tu <= 'z' or 'A' <= ki_tu <= 'Z':
+    print(f'{ki_tu} là chữ cái')
 else:
-    print('Khong phai 3 cạnh cua tam giap')
-    
+    print(f'{ki_tu} là chữ số')
+
+# cách khác:
+if ki_tu.isalpha():
+    print(f'{ki_tu} là chữ cái')
+elif ki_tu.isdigit():
+    print(f'{ki_tu} là chữ số')

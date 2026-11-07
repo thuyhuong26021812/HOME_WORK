@@ -1,0 +1,26 @@
+# 9. Chuyển đổi số thành chữ số: Nhập một số nguyên từ 0 đến 9, in ra tên chữ số tương ứng (0 -> "Không", 1 -> "Một", ...) – Xem trước match …case 
+
+n = int(input())
+match n:
+    case 0:
+        print('Không')
+    case 1:
+        print('Một')
+    case 2:
+        print('Hai')
+    case 3:
+        print('Ba')
+    case 4:
+        print('Bốn')
+    case 5:
+        print('Năm')
+    case 6:
+        print('Sáu')
+    case 7:
+        print('Bảy')
+    case 8:
+        print('Tám')
+    case 9:
+        print('Chín')
+    case _:
+        print('Giá trị không hợp lệ')

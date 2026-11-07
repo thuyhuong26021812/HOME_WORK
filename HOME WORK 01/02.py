@@ -1,7 +1,7 @@
-import math
-a, b = map(int, input('nhập độ lớn cạnh: ').split())
-dien_tich_hcn = a*b
-dien_tich_hinh_tron = math.pi*((b/2)**2)
-dien_tich_con_lai = dien_tich_hcn - dien_tich_hinh_tron
-print(f'Diện tích trồng hoa là: {dien_tich_con_lai:.2f}')
-    
+# 2.Kiểm tra số có tận cùng 5 không: Viết chương trình nhập một số nguyên, kiểm tra số đó có tận cùng 5 không, nếu đúng in ra “True”, nếu sai in ra “False”. 
+
+n = float(input())
+if n%5 == 0 and n%2 == 1:
+    print('True')
+else:
+    print('False')
