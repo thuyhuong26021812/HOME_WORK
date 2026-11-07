@@ -1,3 +1,2 @@
-def integer(n):
-    return n*2
-print(integer(4))
+n = int(input('integer: '))
+print(n*2)
