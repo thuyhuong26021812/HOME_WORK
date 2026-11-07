@@ -1,3 +1,4 @@
+# Bài 8:
 import textwrap
 ten = input('Ten chu ho: ')
 so_cu = int(input('Chi so thang truoc: '))
