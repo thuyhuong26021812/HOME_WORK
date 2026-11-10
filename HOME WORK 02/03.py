@@ -2,9 +2,9 @@
 
 import math
 a, b, c = map(float, input('độ dài 3 cạnh: ').split())
-p = a + b + c # chu vi
-s = math.sqrt(p/2*(p/2-a)*(p/2-b)*(p/2-c))
 if min(a,b,c)>0 and a+b>c and a+c>b and b+c>a:
+    p = a + b + c # chu vi
+    s = math.sqrt(p/2*(p/2-a)*(p/2-b)*(p/2-c))
     if a==b or a==c or b==c:
         print('Tam giac can', '\nChu vi: ',p, '\nDiện tích: ',s) 
     elif a==b==c:
