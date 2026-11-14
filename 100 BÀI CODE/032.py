@@ -6,6 +6,6 @@ tong = 0
 for i in range(m,n+1):
     if i % 3 == 0 or i % 5 == 0:
         a.append(i)
-    elif i % 2 == 0:
+    if i % 2 == 0:
         tong += i
 print(len(a), tong)
